@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset='UTF8'>
+	<link href="css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="css/login.css" rel="stylesheet"/>
+	<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+		<link rel="manifest" href="images/favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/md5.js"></script>
+    <script src="js/login.js"></script>
+
+<title>Hackathon2k16 -- Login</title>
+	</head>
+	<body>
+		<div id="form-main">
+		<img class="img-fluid img-rounded m-x-auto d-block img-mine" src="images/hackathon.png" />
+  <div id="form-div">
+    <div class="form" id="form1">
+
+      <p class="tpx">
+        <input name="tpx" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Tpx ID" id="name" />
+      </p>
+      <p class="password">
+        <input name="password" type="password" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Password" />
+      </p>
+      <div class="submit">
+        <input type="submit" value="LOGIN" id="button-blue" onclick="login_me()" />
+        <div class="ease"></div>
+      </div>
+    </div>
+  </div>
+	</body>
+</html>
+
+
