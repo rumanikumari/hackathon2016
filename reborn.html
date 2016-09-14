@@ -55,7 +55,7 @@
     </datalist>
       </li>
       <li>
-        <button class="waves-effect waves-yellow btn-medium" type="button" id="submit1" onclick="updateTeamInfo()">Submit</button>
+        <button class="waves-effect waves-yellow btn-medium" type="button" id="submit" onclick="updateTeamInfo()">Submit</button>
       </li>
       <li>
         <label for="team-name">Team Name</label>
@@ -90,7 +90,7 @@
         <textarea rows="6" id="notes" placeholder="Enter notes here"></textarea>
       </li>
       <li>
-        <button class="waves-effect waves-yellow btn-medium" type="submit2" onclick="UpdateScore()">Submit</button>
+        <button class="waves-effect waves-yellow btn-medium" type="submit" onclick="UpdateScore()">Submit</button>
       </li>
     </ul>
   </form>
@@ -102,42 +102,10 @@
             <section id="peer" class="peer-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-			 <label align='center' style="color:blue"><h2>Vote For Three Teams</h2></label>
-               
-				  </br>
-				</br>
-				 <ul class="flex-outer">
-				      	<li>
-					<label style="color:blue">Search for team by priority</label>
-					<input type="search" id="search1" list="mySelect" placeholder="Enter team name here">
-					 <datalist id="mySelect">
-					</datalist>
-				      	</li>
-					<br/>
-					<br/>
-				  	<li>
-					<label style="color:blue">Search for team by priority</label>
-					<input type="search" id="search2" list="mySelect2" placeholder="Enter team name here">
-					 <datalist id="mySelect2">
-					 </datalist>
-				       </li>
-					<br/>
-					<br/>
-				       <li>
-					<label style="color:blue">Search for team by priority</label>
-					<input type="search" id="search3" list="mySelect3" placeholder="Enter team name here">
-					 <datalist id="mySelect3">
-					</datalist>
-				       </li>
-					<br/>
-					<br/>
-				       <li>
-					<button type="button" id="submit3">Submit</button>
-				       </li>
-				   </ul>
-			</div>
-
+                <div class="col-lg-12" id="peer">
+                <h1 id="peer_h1">Peer Area</h1>
+                    
+                </div>
             </div>
         </div>
     </section>
@@ -150,24 +118,60 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Rule Area</h1>
-                          <p>I am a very simple card. I am good at containing small bits of information.
-                               I am convenient because I require little markup to use effectively.</p>
-                               <p>I am a very simple card. I am good at containing small bits of information.
-                               I am convenient because I require little markup to use effectively.</p><p>I am a very simple card. I am good at containing small bits of information.
-                               I am convenient because I require little markup to use effectively.</p><p>I am a very simple card. I am good at containing small bits of information.
-                               I am convenient because I require little markup to use effectively.</p><p>I am a very simple card. I am good at containing small bits of information.
-                               I am convenient because I require little markup to use effectively.</p><p>I am a very simple card. I am good at containing small bits of information.
-                               I am convenient because I require little markup to use effectively.</p><p>I am a very simple card. I am good at containing small bits of information.
-                               I am convenient because I require little markup to use effectively.</p><p>I am a very simple card. I am good at containing small bits of information.
-                               I am convenient because I require little markup to use effectively.</p><p>I am a very simple card. I am good at containing small bits of information.
-                               I am convenient because I require little markup to use effectively.</p><p>I am a very simple card. I am good at containing small bits of information.
-                               I am convenient because I require little markup to use effectively.</p><p>I am a very simple card. I am good at containing small bits of information.
-                               I am convenient because I require little markup to use effectively.</p><p>I am a very simple card. I am good at containing small bits of information.
-                               I am convenient because I require little markup to use effectively.</p><p>I am a very simple card. I am good at containing small bits of information.
-                               I am convenient because I require little markup to use effectively.</p><p>I am a very simple card. I am good at containing small bits of information.
-                               I am convenient because I require little markup to use effectively.</p><p>I am a very simple card. I am good at containing small bits of information.
-                               I am convenient because I require little markup to use effectively.</p><p>I am a very simple card. I am good at containing small bits of information.
-                               I am convenient because I require little markup to use effectively.</p>
+
+                      <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                                <span class="card-title">Innovation</span>
+                                <ul>
+                                <li class="">Is it an amazing new scenario ?</li>
+                                <div class="line-separator"></div>
+                                <li class="">How creative is the idea ?</li>
+                                <div class="line-separator"></div>
+                                <li class="">Is it a different take on an existing/similar idea ?</li>
+                                <div class="line-separator"></div>
+                                <li class="">How ambitious is the hack ?</li>
+                                </ul>
+                            </div>
+                      </div>
+                      <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                                <span class="card-title">Business Value</span>
+                                <ul>
+                                <li class="">Does the application create value ?</li>
+                                <div class="line-separator"></div>
+                                <li class="">Does it save money or create opportunity ?</li>
+                                <div class="line-separator"></div>
+                                <li class="">Does it solve a real problem ?</li>
+                                <div class="line-separator"></div>
+                                <li class="">How many people does it have an impact on ?</li>
+                                <div class="line-separator"></div>
+                                <li class="">Would customers use it ?</li>
+                                </ul>
+                            </div>
+                      </div>
+                      <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                                <span class="card-title">User Experience</span>
+                                <ul>
+                                <li class="">Does the app have a user interface that is gorgeous, easy to use, and fast ?</li>
+                                <div class="line-separator"></div>
+                                <li class="">Is it intuitive ?</li>
+                                </ul>
+                            </div>
+                      </div>
+                      <div class="card blue-grey darken-1">
+                            <div class="card-content white-text">
+                                <span class="card-title">Functionality</span>
+                                <ul>
+                                <li class="">Does it accomplish its stated goal ?</li>
+                                <div class="line-separator"></div>
+                                <li class="">Does it work? Can you demo it, not just give a PP presentation ?</li>
+                                <div class="line-separator"></div>
+                                <li class="">Does the app work completely from start to finish ?</li>
+                                </ul>
+                            </div>
+                      </div>
+
                 </div>
             </div>
         </div>
@@ -177,22 +181,8 @@
     <section id="team" class="team-section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1>team area</h1>
-                    <ul class="collapsible popout" data-collapsible="accordion">
-    <li>
-      <div class="collapsible-header">Team 1</div>
-      <div class="collapsible-body"><p>Text here</p></div>
-    </li>
-    <li>
-      <div class="collapsible-header">Team 2</div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-    </li>
-    <li>
-      <div class="collapsible-header">Team 3</div>
-      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-    </li>
-  </ul>
+                <div class="col-lg-12" id="team_display">
+                    
                 </div>
             </div>
         </div>
